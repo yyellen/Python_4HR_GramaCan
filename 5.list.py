@@ -1,27 +1,28 @@
 # 列表list 列表的用法
 scores = [90, 70, 60, 60, 80]
 friends = ["Harry", "Ron", "Hermione"]
-# print(friends)
+# print(friends) # ['Harry', 'Ron', 'Hermione']
 things = [90, "小灰", True]
-# print(things)
-
+# print(things) # [90, '小灰', True]
 
 # print(scores)
 # print(scores[0]) # 90
-# print(scores[3]) # 50
+# print(scores[3]) # 60
 # print(scores[-1]) # 80
-# print(scores[-2]) # 50
+# print(scores[-2]) # 60
 # print(scores[0:2]) # [90, 70] 從第0位開始取到第2位之前
-# print(scores[1:4]) # [70, 60, 50] 從第1位開始取到第4位之前
-# print(scores[1:]) # [70, 60, 50, 80] 從第0位開始取到最後
-# print(scores[:4]) # [90, 70, 60, 50] 取第4位以前
+# print(scores[1:4]) # [70, 60, 60] 從第1位開始取到第4位之前
+# print(scores[1:]) # [70, 60, 60, 80] 從第0位開始取到最後
+# print(scores[:4]) # [90, 70, 60, 60] 取第4位以前
+
+print(len(scores)) # 5 取得list長度
 
 phrase = "Hello Mr.White"
 # print(phrase[0:5]) # Hello
 # print(phrase[6:]) # Mr.White
 
-# scores[0] = 30
-# print(scores) # [30, 70, 60, 50, 80]
+# scores[0] = 30 # 把第0位更改成30
+# print(scores) # [30, 70, 60, 60, 80]
 
 # scores.extend(friends) # 在list延伸另一個list
 # print(scores) # [30, 70, 60, 50, 80, 'Harry', 'Ron', 'Hermione']
@@ -47,8 +48,8 @@ phrase = "Hello Mr.White"
 # scores.reverse() # 反轉list
 # print(scores) # [80, 50, 60, 70, 90]
 
-# print(scores.index(90)) # 0
-# print(scores.index(60)) # 2 回傳第一個找到的位置
+print(scores.index(90)) # 0
+print(scores.index(60)) # 2 回傳第一個找到的位置
 
 print(scores.count(60)) # 2 計算有幾個
 print(scores.count(80)) # 1
