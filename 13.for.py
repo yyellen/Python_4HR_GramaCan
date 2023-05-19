@@ -35,9 +35,19 @@
 # 6
 
 def power(base_num, pow_num):
+  if base_num == 0 and pow_num == 0:
+    return ("未定義")
+  if pow_num >= 0:
     result = 1
     for i in range(pow_num):
-        result = result * base_num
-    return result
+      result *= base_num
+  else:
+    result = 1
+    for i in range(abs(pow_num)):
+      result /= base_num
+  return (result)
 
-print(power(2, 5))
+print(power(2, 2))
+print(power(2, 0))
+print(power(2, -2))
+print(power(0, 0))
