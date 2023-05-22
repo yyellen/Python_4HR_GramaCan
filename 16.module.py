@@ -7,8 +7,8 @@ import token
 import sys
 import numpy as np
 
-# print(tool.name)
-# print(tool.age)
-# print(tool.max_num(2, 3, 88))
+print(tool.name)
+print(tool.age)
+print(tool.max_num(2, 3, 88))
 
-# print(sys.path)
+print(sys.path)
